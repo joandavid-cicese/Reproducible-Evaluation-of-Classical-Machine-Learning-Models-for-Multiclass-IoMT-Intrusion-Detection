@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Macro-F1 on the test set by scaling variant (same data, models and hyperparameters; seed 42). The last two variants are methodological diagnostics, not valid deployment pipelines.}
+\label{tab:ablation}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Scaling & Task & RF & AdaBoost & LR & MLP \\
+\midrule
+Global (fit on train) & binary & 0.9839 & 0.9842 & 0.9497 & 0.9641 \\
+Global (fit on train) & 6class & 0.9485 & 0.9365 & 0.7236 & 0.8718 \\
+Global (fit on train) & 19class & 0.9059 & 0.8361 & 0.5274 & 0.7164 \\
+No scaling & binary & 0.9848 & 0.9810 & 0.7835 & 0.7996 \\
+No scaling & 6class & 0.9538 & 0.9204 & 0.1688 & 0.3388 \\
+No scaling & 19class & 0.8951 & 0.8403 & 0.0488 & 0.0989 \\
+Fit on train+test (diagnostic) & binary & 0.9824 & 0.9839 & 0.9501 & 0.9633 \\
+Fit on train+test (diagnostic) & 6class & 0.9518 & 0.9395 & 0.7211 & 0.8803 \\
+Fit on train+test (diagnostic) & 19class & 0.9163 & 0.8336 & 0.5284 & 0.7540 \\
+Per file (label-dependent, diagnostic) & binary & 0.9995 & 1.0000 & 0.4941 & 0.9849 \\
+Per file (label-dependent, diagnostic) & 6class & 0.6505 & 0.4379 & 0.1326 & 0.7798 \\
+Per file (label-dependent, diagnostic) & 19class & 0.6980 & 0.3531 & 0.0193 & 0.4453 \\
+\bottomrule
+\end{tabular}}
+\end{table}

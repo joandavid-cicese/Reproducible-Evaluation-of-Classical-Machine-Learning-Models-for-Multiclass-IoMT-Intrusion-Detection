@@ -1,0 +1,42 @@
+\begin{table}[htbp]
+\centering
+\caption{Difference with the published values of [5], rounded to the precision of the published value.}
+\label{tab:comparison_published}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Task & Model & Metric & Published [5] & This work & Value & Difference (pp) & Relative (\%) & Published averaging \\
+\midrule
+19class & RF & accuracy & 0.733 & This work, global scaling (E1, seed 42) & 0.995 & 26.200 & 35.800 & -- \\
+19class & RF & accuracy & 0.733 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.994 & 26.100 & 35.600 & -- \\
+19class & RF & prec\_macro & 0.691 & This work, global scaling (E1, seed 42) & 0.946 & 25.500 & 36.900 & not stated (recall != accuracy -> not weighted; likely macro) \\
+19class & RF & prec\_macro & 0.691 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.944 & 25.300 & 36.600 & not stated (recall != accuracy -> not weighted; likely macro) \\
+19class & RF & recall\_macro & 0.577 & This work, global scaling (E1, seed 42) & 0.890 & 31.400 & 54.300 & not stated (recall != accuracy -> not weighted; likely macro) \\
+19class & RF & recall\_macro & 0.577 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.883 & 30.600 & 53.000 & not stated (recall != accuracy -> not weighted; likely macro) \\
+19class & RF & f1\_macro & 0.551 & This work, global scaling (E1, seed 42) & 0.906 & 35.500 & 64.400 & not stated (recall != accuracy -> not weighted; likely macro) \\
+19class & RF & f1\_macro & 0.551 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.895 & 34.400 & 62.500 & not stated (recall != accuracy -> not weighted; likely macro) \\
+19class & AdaBoost & f1\_macro & 0.141 & This work, global scaling (E1, seed 42) & 0.836 & 69.500 & 493.000 & not stated \\
+19class & AdaBoost & f1\_macro & 0.141 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.840 & 69.900 & 495.900 & not stated \\
+19class & LR & f1\_macro & 0.432 & This work, global scaling (E1, seed 42) & 0.527 & 9.500 & 22.100 & not stated \\
+19class & LR & f1\_macro & 0.432 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.049 & -38.300 & -88.700 & not stated \\
+19class & MLP & f1\_macro & 0.522 & This work, global scaling (E1, seed 42) & 0.716 & 19.400 & 37.200 & not stated \\
+19class & MLP & f1\_macro & 0.522 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.099 & -42.300 & -81.000 & not stated \\
+6class & RF & f1\_macro & 0.676 & This work, global scaling (E1, seed 42) & 0.949 & 27.200 & 40.300 & not stated \\
+6class & RF & f1\_macro & 0.676 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.954 & 27.800 & 41.100 & not stated \\
+6class & AdaBoost & f1\_macro & 0.501 & This work, global scaling (E1, seed 42) & 0.936 & 43.500 & 86.900 & not stated \\
+6class & AdaBoost & f1\_macro & 0.501 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.920 & 41.900 & 83.700 & not stated \\
+6class & LR & f1\_macro & 0.694 & This work, global scaling (E1, seed 42) & 0.724 & 3.000 & 4.300 & not stated \\
+6class & LR & f1\_macro & 0.694 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.169 & -52.500 & -75.700 & not stated \\
+6class & MLP & f1\_macro & 0.665 & This work, global scaling (E1, seed 42) & 0.872 & 20.700 & 31.100 & not stated \\
+6class & MLP & f1\_macro & 0.665 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.339 & -32.600 & -49.100 & not stated \\
+binary & RF & f1\_macro & 0.961 & This work, global scaling (E1, seed 42) & 0.984 & 2.300 & 2.400 & not stated \\
+binary & RF & f1\_macro & 0.961 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.985 & 2.400 & 2.500 & not stated \\
+binary & AdaBoost & f1\_macro & 0.959 & This work, global scaling (E1, seed 42) & 0.984 & 2.500 & 2.600 & not stated \\
+binary & AdaBoost & f1\_macro & 0.959 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.981 & 2.200 & 2.300 & not stated \\
+binary & LR & f1\_macro & 0.946 & This work, global scaling (E1, seed 42) & 0.950 & 0.400 & 0.400 & not stated \\
+binary & LR & f1\_macro & 0.946 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.783 & -16.300 & -17.200 & not stated \\
+binary & MLP & f1\_macro & 0.952 & This work, global scaling (E1, seed 42) & 0.964 & 1.200 & 1.300 & not stated \\
+binary & MLP & f1\_macro & 0.952 & This work, no scaling (reconstruction from what [5] documents, seed 42) & 0.800 & -15.200 & -16.000 & not stated \\
+\bottomrule
+\end{tabular}}
+\end{table}

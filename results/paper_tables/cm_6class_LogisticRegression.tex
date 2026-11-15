@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Confusion matrix, 6class, LR (test set, n = 1,614,182). Rows: true class; columns: predicted class; class order as in Table 2.}
+\label{tab:cm_6class_LogisticRegression}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+True / Pred & Benign & DDoS & DoS & MQTT & RECON & SPOOFING \\
+\midrule
+Benign & 33{,}095 & 91 & 3{,}401 & 577 & 52 & 391 \\
+DDoS & 839 & 1{,}052{,}046 & 12{,}741 & 215 & 900 & 23 \\
+DoS & 269 & 351{,}336 & 64{,}813 & 30 & 228 & 0 \\
+MQTT & 1{,}273 & 50 & 60 & 62{,}221 & 76 & 35 \\
+RECON & 1{,}448 & 645 & 129 & 234 & 24{,}871 & 349 \\
+SPOOFING & 562 & 2 & 214 & 80 & 154 & 732 \\
+\bottomrule
+\end{tabular}}
+\end{table}

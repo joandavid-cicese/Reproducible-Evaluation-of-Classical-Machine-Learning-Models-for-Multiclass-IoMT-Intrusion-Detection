@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Confusion matrix, 6class, RF (test set, n = 1,614,182). Rows: true class; columns: predicted class; class order as in Table 2.}
+\label{tab:cm_6class_RandomForest}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+True / Pred & Benign & DDoS & DoS & MQTT & RECON & SPOOFING \\
+\midrule
+Benign & 36{,}672 & 0 & 0 & 2 & 385 & 548 \\
+DDoS & 2 & 1{,}066{,}697 & 62 & 1 & 1 & 1 \\
+DoS & 0 & 167 & 416{,}508 & 0 & 1 & 0 \\
+MQTT & 223 & 0 & 3 & 63{,}433 & 1 & 55 \\
+RECON & 600 & 0 & 0 & 4 & 26{,}992 & 80 \\
+SPOOFING & 219 & 0 & 0 & 2 & 94 & 1{,}429 \\
+\bottomrule
+\end{tabular}}
+\end{table}

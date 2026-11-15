@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Confusion matrix, 6class, MLP (test set, n = 1,614,182). Rows: true class; columns: predicted class; class order as in Table 2.}
+\label{tab:cm_6class_DNN_MLP}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+True / Pred & Benign & DDoS & DoS & MQTT & RECON & SPOOFING \\
+\midrule
+Benign & 35{,}044 & 1 & 0 & 3 & 62 & 2{,}497 \\
+DDoS & 3 & 1{,}066{,}454 & 294 & 10 & 2 & 1 \\
+DoS & 1 & 1{,}295 & 414{,}654 & 719 & 6 & 1 \\
+MQTT & 812 & 2 & 22 & 62{,}724 & 7 & 148 \\
+RECON & 1{,}353 & 4 & 0 & 23 & 25{,}936 & 360 \\
+SPOOFING & 473 & 1 & 0 & 2 & 242 & 1{,}026 \\
+\bottomrule
+\end{tabular}}
+\end{table}

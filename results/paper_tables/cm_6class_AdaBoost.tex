@@ -1,0 +1,18 @@
+\begin{table}[htbp]
+\centering
+\caption{Confusion matrix, 6class, AdaBoost (test set, n = 1,614,182). Rows: true class; columns: predicted class; class order as in Table 2.}
+\label{tab:cm_6class_AdaBoost}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+True / Pred & Benign & DDoS & DoS & MQTT & RECON & SPOOFING \\
+\midrule
+Benign & 36{,}018 & 0 & 0 & 15 & 717 & 857 \\
+DDoS & 2 & 1{,}066{,}635 & 122 & 2 & 1 & 2 \\
+DoS & 0 & 118 & 416{,}556 & 0 & 2 & 0 \\
+MQTT & 141 & 2 & 2 & 63{,}494 & 20 & 56 \\
+RECON & 451 & 1 & 2 & 29 & 27{,}036 & 157 \\
+SPOOFING & 183 & 0 & 1 & 8 & 102 & 1{,}450 \\
+\bottomrule
+\end{tabular}}
+\end{table}

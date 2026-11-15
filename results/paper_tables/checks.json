@@ -1,0 +1,116 @@
+{
+  "source_run": "results/e1/global_20261107_111042/results.json",
+  "checks": [
+    {
+      "task": "binary",
+      "model": "RandomForest",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "binary",
+      "model": "AdaBoost",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "binary",
+      "model": "LogisticRegression",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "binary",
+      "model": "DNN_MLP",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "6class",
+      "model": "RandomForest",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "6class",
+      "model": "AdaBoost",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "6class",
+      "model": "LogisticRegression",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "6class",
+      "model": "DNN_MLP",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "19class",
+      "model": "RandomForest",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "19class",
+      "model": "AdaBoost",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "19class",
+      "model": "LogisticRegression",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    },
+    {
+      "task": "19class",
+      "model": "DNN_MLP",
+      "n": 1614182,
+      "cm_matches_json": true,
+      "metrics_match_json": true,
+      "per_class_match_json": true,
+      "reorder_preserves_metrics": true
+    }
+  ],
+  "class_order_issues": [],
+  "duplicate_runs": [],
+  "incomplete_runs_not_used": []
+}

@@ -1,0 +1,20 @@
+presentation_index,class,labelencoder_index,train_count,test_count
+0,ARP spoofing,0,16047,1744
+1,DDoS ICMP,2,1537476,349699
+2,DDoS SYN,3,801962,172397
+3,DDoS TCP,4,804465,182598
+4,DDoS UDP,5,1635956,362070
+5,DDoS connect flood,6,173036,41916
+6,DDoS publish flood,7,27623,8416
+7,DoS ICMP,8,416292,98432
+8,DoS SYN,9,441903,98595
+9,DoS TCP,10,380384,82096
+10,DoS UDP,11,566950,137553
+11,DoS connect flood,12,12773,3131
+12,DoS publish flood,13,44376,8505
+13,Malformed data,14,5130,1747
+14,OS scan,15,16832,3834
+15,Ping sweep,16,740,186
+16,Port scan,17,83981,22622
+17,Recon VulScan,18,2173,1034
+18,Benign,1,192732,37607

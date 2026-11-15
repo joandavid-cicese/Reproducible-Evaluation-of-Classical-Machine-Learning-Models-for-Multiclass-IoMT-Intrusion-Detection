@@ -1,0 +1,31 @@
+\begin{table}[htbp]
+\centering
+\caption{Class mapping for the 19-class task. Presentation order (used in all tables) and the LabelEncoder index used in the code (alphabetical order). Counts after cleaning.}
+\label{tab:class_mapping}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+presentation\_index & class & labelencoder\_index & train\_count & test\_count \\
+\midrule
+0 & ARP spoofing & 0 & 16{,}047 & 1{,}744 \\
+1 & DDoS ICMP & 2 & 1{,}537{,}476 & 349{,}699 \\
+2 & DDoS SYN & 3 & 801{,}962 & 172{,}397 \\
+3 & DDoS TCP & 4 & 804{,}465 & 182{,}598 \\
+4 & DDoS UDP & 5 & 1{,}635{,}956 & 362{,}070 \\
+5 & DDoS connect flood & 6 & 173{,}036 & 41{,}916 \\
+6 & DDoS publish flood & 7 & 27{,}623 & 8{,}416 \\
+7 & DoS ICMP & 8 & 416{,}292 & 98{,}432 \\
+8 & DoS SYN & 9 & 441{,}903 & 98{,}595 \\
+9 & DoS TCP & 10 & 380{,}384 & 82{,}096 \\
+10 & DoS UDP & 11 & 566{,}950 & 137{,}553 \\
+11 & DoS connect flood & 12 & 12{,}773 & 3{,}131 \\
+12 & DoS publish flood & 13 & 44{,}376 & 8{,}505 \\
+13 & Malformed data & 14 & 5{,}130 & 1{,}747 \\
+14 & OS scan & 15 & 16{,}832 & 3{,}834 \\
+15 & Ping sweep & 16 & 740 & 186 \\
+16 & Port scan & 17 & 83{,}981 & 22{,}622 \\
+17 & Recon VulScan & 18 & 2{,}173 & 1{,}034 \\
+18 & Benign & 1 & 192{,}732 & 37{,}607 \\
+\bottomrule
+\end{tabular}}
+\end{table}

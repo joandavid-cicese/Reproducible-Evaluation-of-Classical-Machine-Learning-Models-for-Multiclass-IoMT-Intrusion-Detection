@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Test-set results (single evaluation on D_test; metrics recomputed from the saved predictions) and 10-fold stratified CV on D_train. * = model selected by CV macro-F1. CI: percentile bootstrap over test observations (1,000 resamples); it does not include seed-to-seed variability.}
+\label{tab:main_results}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Task & Model & Accuracy & Macro P & Macro R & Macro F1 & F1 95\% CI & CV Macro F1 \\
+\midrule
+binary & RF * & 0.9986 & 0.9881 & 0.9799 & 0.9839 & [0.9833, 0.9846] & 0.9942 ± 0.0002 \\
+binary & AdaBoost & 0.9986 & 0.9890 & 0.9795 & 0.9842 & [0.9836, 0.9848] & 0.9919 ± 0.0003 \\
+binary & LR & 0.9954 & 0.9498 & 0.9495 & 0.9497 & [0.9485, 0.9508] & 0.9523 ± 0.0010 \\
+binary & MLP & 0.9968 & 0.9698 & 0.9586 & 0.9641 & [0.9630, 0.9650] & 0.9777 ± 0.0006 \\
+6class & RF * & 0.9985 & 0.9384 & 0.9608 & 0.9485 & [0.9457, 0.9511] & 0.9785 ± 0.0008 \\
+6class & AdaBoost & 0.9981 & 0.9204 & 0.9604 & 0.9365 & [0.9336, 0.9394] & 0.9767 ± 0.0011 \\
+6class & LR & 0.7668 & 0.8059 & 0.7194 & 0.7236 & [0.7199, 0.7272] & 0.7197 ± 0.0025 \\
+6class & MLP & 0.9948 & 0.8597 & 0.9061 & 0.8718 & [0.8691, 0.8744] & 0.9065 ± 0.0069 \\
+19class & RF * & 0.9953 & 0.9458 & 0.8905 & 0.9059 & [0.9023, 0.9095] & 0.9573 ± 0.0021 \\
+19class & AdaBoost & 0.8160 & 0.8978 & 0.8511 & 0.8361 & [0.8327, 0.8393] & 0.9551 ± 0.0017 \\
+19class & LR & 0.7589 & 0.6821 & 0.5536 & 0.5274 & [0.5233, 0.5312] & 0.5830 ± 0.0031 \\
+19class & MLP & 0.9864 & 0.8459 & 0.7359 & 0.7164 & [0.7137, 0.7192] & 0.8050 ± 0.0115 \\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,36 @@
+\begin{table}[htbp]
+\centering
+\caption{Seed-to-seed variability on the official test set: model random_state varied, data and row order fixed. LR (lbfgs) is deterministic.}
+\label{tab:seeds}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrr}
+\toprule
+Scaling & Task & Model & Seeds & Macro F1 (mean ± sd) & Min & Max \\
+\midrule
+global & binary & RF & 5 & 0.9835 ± 0.0011 & 0.9824 & 0.9851 \\
+none & binary & RF & 5 & 0.9844 ± 0.0011 & 0.9832 & 0.9860 \\
+global & binary & AdaBoost & 5 & 0.9839 ± 0.0002 & 0.9837 & 0.9842 \\
+none & binary & AdaBoost & 5 & 0.9808 ± 0.0005 & 0.9804 & 0.9816 \\
+global & binary & LR & 5 & 0.9497 ± 0.0000 & 0.9497 & 0.9497 \\
+none & binary & LR & 5 & 0.7835 ± 0.0000 & 0.7835 & 0.7835 \\
+global & binary & MLP & 5 & 0.9636 ± 0.0026 & 0.9605 & 0.9672 \\
+none & binary & MLP & 5 & 0.6726 ± 0.1637 & 0.4941 & 0.8085 \\
+global & 6class & RF & 5 & 0.9497 ± 0.0018 & 0.9471 & 0.9513 \\
+none & 6class & RF & 5 & 0.9532 ± 0.0007 & 0.9522 & 0.9538 \\
+global & 6class & AdaBoost & 5 & 0.9389 ± 0.0023 & 0.9364 & 0.9409 \\
+none & 6class & AdaBoost & 5 & 0.9195 ± 0.0006 & 0.9191 & 0.9204 \\
+global & 6class & LR & 5 & 0.7236 ± 0.0000 & 0.7236 & 0.7236 \\
+none & 6class & LR & 5 & 0.1688 ± 0.0000 & 0.1688 & 0.1688 \\
+global & 6class & MLP & 5 & 0.8763 ± 0.0055 & 0.8718 & 0.8849 \\
+none & 6class & MLP & 5 & 0.3317 ± 0.0087 & 0.3213 & 0.3388 \\
+global & 19class & RF & 5 & 0.9106 ± 0.0045 & 0.9055 & 0.9144 \\
+none & 19class & RF & 5 & 0.9130 ± 0.0104 & 0.8951 & 0.9216 \\
+global & 19class & AdaBoost & 5 & 0.8293 ± 0.0063 & 0.8242 & 0.8363 \\
+none & 19class & AdaBoost & 5 & 0.8398 ± 0.0005 & 0.8393 & 0.8403 \\
+global & 19class & LR & 5 & 0.5274 ± 0.0000 & 0.5274 & 0.5274 \\
+none & 19class & LR & 5 & 0.0488 ± 0.0000 & 0.0488 & 0.0488 \\
+global & 19class & MLP & 5 & 0.7379 ± 0.0211 & 0.7136 & 0.7554 \\
+none & 19class & MLP & 5 & 0.0981 ± 0.0079 & 0.0844 & 0.1037 \\
+\bottomrule
+\end{tabular}}
+\end{table}

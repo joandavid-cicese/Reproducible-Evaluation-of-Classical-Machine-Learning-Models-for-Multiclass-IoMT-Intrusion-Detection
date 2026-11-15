@@ -1,0 +1,7 @@
+presentation_index,class,labelencoder_index,train_count,test_count
+0,Benign,0,192732,37607
+1,DDoS,1,4779859,1066764
+2,DoS,2,1805529,416676
+3,MQTT,3,262938,63715
+4,RECON,4,103726,27676
+5,SPOOFING,5,16047,1744

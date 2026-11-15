@@ -1,0 +1,24 @@
+\begin{table}[htbp]
+\centering
+\caption{Macro-F1 difference global scaling minus no scaling, paired by seed.}
+\label{tab:seeds_diff}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+Task & Model & Mean diff & SD & Min & Max & Seeds & Seeds with diff > 0 \\
+\midrule
+binary & RF & -0.0009 & 0.0016 & -0.0036 & 0.0006 & 5 & 1 \\
+binary & AdaBoost & 0.0031 & 0.0006 & 0.0021 & 0.0035 & 5 & 5 \\
+binary & LR & 0.1662 & 0.0000 & 0.1662 & 0.1662 & 5 & 5 \\
+binary & MLP & 0.2910 & 0.1625 & 0.1586 & 0.4704 & 5 & 5 \\
+6class & RF & -0.0036 & 0.0015 & -0.0053 & -0.0019 & 5 & 0 \\
+6class & AdaBoost & 0.0194 & 0.0028 & 0.0160 & 0.0218 & 5 & 5 \\
+6class & LR & 0.5548 & 0.0000 & 0.5548 & 0.5548 & 5 & 5 \\
+6class & MLP & 0.5446 & 0.0078 & 0.5330 & 0.5524 & 5 & 5 \\
+19class & RF & -0.0024 & 0.0080 & -0.0093 & 0.0108 & 5 & 1 \\
+19class & AdaBoost & -0.0105 & 0.0059 & -0.0151 & -0.0040 & 5 & 0 \\
+19class & LR & 0.4786 & 0.0000 & 0.4786 & 0.4786 & 5 & 5 \\
+19class & MLP & 0.6399 & 0.0247 & 0.6107 & 0.6687 & 5 & 5 \\
+\bottomrule
+\end{tabular}}
+\end{table}

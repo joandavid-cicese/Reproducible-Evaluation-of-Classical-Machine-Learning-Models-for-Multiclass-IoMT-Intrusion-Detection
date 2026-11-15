@@ -1,0 +1,99 @@
+{
+  "rule": "Per task, the model with the highest mean macro-F1 over the stratified CV folds of D_train is selected. Only CV results are read; no test-set result is used.",
+  "note": "This file formalizes the selection rule. It does not certify that test results were never inspected before the rule was adopted.",
+  "created": "2026-11-10 16:37:59",
+  "cv_fold_files": 120,
+  "cv_fold_files_sha256": "d5c732e956c24a7b2061470e9947a3d8f446b3eecd9c38d61c63ed18f85b64c7",
+  "selection": {
+    "binary": {
+      "selected_model": "RandomForest",
+      "complete_cv": true,
+      "ranking": [
+        {
+          "model": "RandomForest",
+          "cv_f1_mean": 0.9942457494006108,
+          "cv_f1_sd": 0.00020858630532232482,
+          "folds": 10
+        },
+        {
+          "model": "AdaBoost",
+          "cv_f1_mean": 0.991937828932909,
+          "cv_f1_sd": 0.00028262608772604015,
+          "folds": 10
+        },
+        {
+          "model": "DNN_MLP",
+          "cv_f1_mean": 0.9777151022105433,
+          "cv_f1_sd": 0.0005755309242831082,
+          "folds": 10
+        },
+        {
+          "model": "LogisticRegression",
+          "cv_f1_mean": 0.9523317759122317,
+          "cv_f1_sd": 0.000986988674035866,
+          "folds": 10
+        }
+      ]
+    },
+    "6class": {
+      "selected_model": "RandomForest",
+      "complete_cv": true,
+      "ranking": [
+        {
+          "model": "RandomForest",
+          "cv_f1_mean": 0.9785275923341272,
+          "cv_f1_sd": 0.0008017222859682502,
+          "folds": 10
+        },
+        {
+          "model": "AdaBoost",
+          "cv_f1_mean": 0.9767034444489859,
+          "cv_f1_sd": 0.0010780130318063103,
+          "folds": 10
+        },
+        {
+          "model": "DNN_MLP",
+          "cv_f1_mean": 0.9064751173642124,
+          "cv_f1_sd": 0.006867999918200058,
+          "folds": 10
+        },
+        {
+          "model": "LogisticRegression",
+          "cv_f1_mean": 0.7197028883696526,
+          "cv_f1_sd": 0.0024593491753142297,
+          "folds": 10
+        }
+      ]
+    },
+    "19class": {
+      "selected_model": "RandomForest",
+      "complete_cv": true,
+      "ranking": [
+        {
+          "model": "RandomForest",
+          "cv_f1_mean": 0.957304133121902,
+          "cv_f1_sd": 0.0021000112446954763,
+          "folds": 10
+        },
+        {
+          "model": "AdaBoost",
+          "cv_f1_mean": 0.9551415976278337,
+          "cv_f1_sd": 0.0017080094239332127,
+          "folds": 10
+        },
+        {
+          "model": "DNN_MLP",
+          "cv_f1_mean": 0.80502804567206,
+          "cv_f1_sd": 0.011500820805026318,
+          "folds": 10
+        },
+        {
+          "model": "LogisticRegression",
+          "cv_f1_mean": 0.5829647645956577,
+          "cv_f1_sd": 0.003124332561863366,
+          "folds": 10
+        }
+      ]
+    }
+  }
+}

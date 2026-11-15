@@ -1,0 +1,21 @@
+source,source_version,task,model,metric,value,decimals,averaging,status
+Dadkhah2024,published (Internet of Things 28:101351),19class,RandomForest,accuracy,0.733,3,n/a,verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),19class,RandomForest,prec_macro,0.691,3,not stated (recall != accuracy -> not weighted; likely macro),verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),19class,RandomForest,recall_macro,0.577,3,not stated (recall != accuracy -> not weighted; likely macro),verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),19class,RandomForest,f1_macro,0.551,3,not stated (recall != accuracy -> not weighted; likely macro),verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),19class,AdaBoost,f1_macro,0.141,3,not stated,verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),19class,LogisticRegression,f1_macro,0.432,3,not stated,verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),19class,DNN_MLP,f1_macro,0.522,3,not stated,verificar: [5] lo llama DNN
+Dadkhah2024,published (Internet of Things 28:101351),6class,RandomForest,f1_macro,0.676,3,not stated,verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),6class,AdaBoost,f1_macro,0.501,3,not stated,verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),6class,LogisticRegression,f1_macro,0.694,3,not stated,verificar contra el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),6class,DNN_MLP,f1_macro,0.665,3,not stated,verificar: [5] lo llama DNN
+Dadkhah2024,published (Internet of Things 28:101351),binary,RandomForest,f1_macro,0.961,3,not stated,COMPLETAR desde el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),binary,AdaBoost,f1_macro,0.959,3,not stated,COMPLETAR desde el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),binary,LogisticRegression,f1_macro,0.946,3,not stated,COMPLETAR desde el PDF publicado
+Dadkhah2024,published (Internet of Things 28:101351),binary,DNN_MLP,f1_macro,0.952,3,not stated,COMPLETAR desde el PDF publicado
+Dadkhah2024,preprint (Preprints.org 202402.0898 v1),19class,RandomForest,accuracy,0.9955,4,n/a,leído por Claude en el preprint; verificar
+Dadkhah2024,preprint (Preprints.org 202402.0898 v1),19class,RandomForest,prec_macro,0.9483,4,not stated,leído por Claude en el preprint; verificar
+Dadkhah2024,preprint (Preprints.org 202402.0898 v1),19class,RandomForest,recall_macro,0.8935,4,not stated,leído por Claude en el preprint; verificar
+Dadkhah2024,preprint (Preprints.org 202402.0898 v1),19class,RandomForest,f1_macro,0.9074,4,not stated,leído por Claude en el preprint; verificar
+Dadkhah2024,preprint (Preprints.org 202402.0898 v1),6class,RandomForest,f1_macro,0.9422,4,not stated,leído por Claude en el preprint; verificar
